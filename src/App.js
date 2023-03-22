@@ -1,4 +1,4 @@
-import MathsMagician from './logic/calculator';
+import MathsMagician from './component/calculator';
 import './index.css';
 
 function App() {

@@ -1,9 +1,14 @@
 // eslint-disable-next-line
-import React from 'react';
+import React, {useState} from 'react';
+import calculate from'../logic/calculate'
 
 // eslint-disable-next-line
-class MathsMagician extends React.Component {
-  render() {
+function MathsMagician()  {
+  const [iniObj, setObj] = useState({
+    total: 0,
+    next: 0,
+    operation: null,
+  });
     return (
       <div className="App">
         <div className="cacul-section">
@@ -48,7 +53,6 @@ class MathsMagician extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default MathsMagician;
