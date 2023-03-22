@@ -1,5 +1,7 @@
-import React from "react";
+// eslint-disable-next-line
+import React from 'react';
 
+// eslint-disable-next-line
 class MathsMagician extends React.Component {
   render() {
     return (
@@ -32,7 +34,7 @@ class MathsMagician extends React.Component {
                   .
                 </button>
               </div>
-              
+
             </div>
 
             <div className="operation">

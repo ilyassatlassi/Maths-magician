@@ -1,10 +1,9 @@
-
 import MathsMagician from './component/component';
 import './index.css';
 
 function App() {
   return (
-    <MathsMagician/>
+    <MathsMagician />
   );
 }
 

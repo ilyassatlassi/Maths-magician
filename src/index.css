@@ -21,7 +21,7 @@
   box-shadow: 0 4px 12px rgba(17, 14, 14, 0.5);
 }
 
-.input-numbers input{
+.input-numbers input {
   color: white;
   background-color: grey;
   border: none;
@@ -70,6 +70,7 @@ button:hover {
   flex-wrap: wrap;
   background: rgb(224, 225, 222);
 }
+
 .numbers {
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +100,7 @@ button:hover {
   width: 66.77%;
   outline: none;
 }
+
 .operation {
   display: flex;
   flex-direction: column;
@@ -107,5 +109,5 @@ button:hover {
 
 .operation button {
   flex: 1;
-  background: rgb(239, 160, 12);
+  background: rgb(182, 122, 11);
 }
