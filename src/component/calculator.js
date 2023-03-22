@@ -4,38 +4,42 @@ import calculate from'../logic/calculate'
 
 // eslint-disable-next-line
 function MathsMagician()  {
-  const [iniObj, setObj] = useState({
-    total: 0,
-    next: 0,
+  const [initObj, setObj] = useState({
+    total:  null,
+    next: null,
     operation: null,
   });
+  const btnEventHandler = (event) => {
+    setObj(calculate(initObj, event.target.textContent))
+  }
     return (
       <div className="App">
         <div className="cacul-section">
           <div className="input-numbers">
-            <input type="text" placeholder="0" />
+            <input type="text" readOnly value = {`${initObj.next ? initObj.total + initObj.operation + initObj.next : initObj.total || 0}`}  />
           </div>
           <div className="content">
             <div className="function-calcul">
               <div className="top-calcul">
-                <button type="button">AC</button>
-                <button type="button">+/-</button>
-                <button type="button">%</button>
+                <button type="button" onClick={btnEventHandler}>AC</button>
+                {console.log(btnEventHandler)}
+                <button type="button" onClick={btnEventHandler}>+/-</button>
+                <button type="button" onClick={btnEventHandler}>%</button>
               </div>
               <div className="numbers">
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
+                <button type="button" onClick={btnEventHandler}>7</button>
+                <button type="button" onClick={btnEventHandler}>8</button>
+                <button type="button" onClick={btnEventHandler}>9</button>
+                <button type="button" onClick={btnEventHandler}>4</button>
+                <button type="button" onClick={btnEventHandler}>5</button>
+                <button type="button" onClick={btnEventHandler}>6</button>
+                <button type="button"onClick={btnEventHandler} >1</button>
+                <button type="button" onClick={btnEventHandler}>2</button>
+                <button type="button" onClick={btnEventHandler}>3</button>
               </div>
               <div className="bottom-calcul">
-                <button type="button" className="button0">0</button>
-                <button type="button">
+                <button type="button" className="button0" onClick={btnEventHandler}>0</button>
+                <button type="button" onClick={btnEventHandler}>
                   .
                 </button>
               </div>
@@ -43,11 +47,11 @@ function MathsMagician()  {
             </div>
 
             <div className="operation">
-              <button type="button">÷</button>
-              <button type="button">x</button>
-              <button type="button">-</button>
-              <button type="button">+</button>
-              <button type="button">=</button>
+              <button type="button" onClick={btnEventHandler}>÷</button>
+              <button type="button" onClick={btnEventHandler}>x</button>
+              <button type="button" onClick={btnEventHandler}>-</button>
+              <button type="button" onClick={btnEventHandler}>+</button>
+              <button type="button" onClick={btnEventHandler}>=</button>
             </div>
           </div>
         </div>
