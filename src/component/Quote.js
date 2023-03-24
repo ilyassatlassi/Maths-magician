@@ -22,26 +22,35 @@ function Quote() {
     };
     fetchData();
   }, []);
-  // eslint-disable-next-line
-  return !initQuote.quote ? (
-    <div className="Quote">
-      <div className="ring" />
-      <span>loading...</span>
-    </div>
-  ) : initQuote.author ? (
-    <div className="Quote-section">
-      <p className="author">
-        &quot;
-        {initQuote.author}
-        &quot;
-      </p>
-      <p className="Quote-phrase">{initQuote.quote}</p>
-    </div>
-  ) : (
-    <div>
-      <p className="Error">{initQuote.quote}</p>
-    </div>
-  );
+
+  let content;
+  if (!initQuote.quote) {
+    content = (
+      <div className="Quote">
+        <div className="ring" />
+        <span>loading...</span>
+      </div>
+    );
+  } else if (initQuote.author) {
+    content = (
+      <div className="Quote-section">
+        <p className="author">
+          &quot;
+          {initQuote.author}
+          &quot;
+        </p>
+        <p className="Quote-phrase">{initQuote.quote}</p>
+      </div>
+    );
+  } else {
+    content = (
+      <div>
+        <p className="Error">{initQuote.quote}</p>
+      </div>
+    );
+  }
+
+  return <div>{content}</div>;
 }
 
 export default Quote;

@@ -4,8 +4,7 @@ import calculate from '../logic/calculate';
 
 import Quote from './Quote';
 
-// eslint-disable-next-line
-function MathsMagician()  {
+function MathsMagician() {
   const [initObj, setObj] = useState({
     total: null,
     next: null,
@@ -14,13 +13,14 @@ function MathsMagician()  {
   const btnEventHandler = (event) => {
     setObj(calculate(initObj, event.target.textContent));
   };
+
   return (
     <div className="App">
 
       <Quote />
       <div className="cacul-section">
         <div className="input-numbers">
-          <input type="text" readOnly value={`${initObj.next ? initObj.total + initObj.operation + initObj.next : initObj.total || 0}`} />
+          <input type="text" readOnly value={`${initObj.next || initObj.operation || initObj.total || 0}`} />
         </div>
         <div className="content">
           <div className="function-calcul">
