@@ -2,8 +2,9 @@
 import React, {useState} from 'react';
 import calculate from '../logic/calculate';
 
-// eslint-disable-next-line
-function MathsMagician()  {
+import Quote from './Quote';
+
+function MathsMagician() {
   const [initObj, setObj] = useState({
     total: null,
     next: null,
@@ -12,11 +13,14 @@ function MathsMagician()  {
   const btnEventHandler = (event) => {
     setObj(calculate(initObj, event.target.textContent));
   };
+
   return (
     <div className="App">
+
+      <Quote />
       <div className="cacul-section">
         <div className="input-numbers">
-          <input type="text" readOnly value={`${initObj.next ? initObj.total + initObj.operation + initObj.next : initObj.total || 0}`} />
+          <input type="text" readOnly value={`${initObj.next || initObj.operation || initObj.total || 0}`} />
         </div>
         <div className="content">
           <div className="function-calcul">
@@ -55,6 +59,7 @@ function MathsMagician()  {
         </div>
       </div>
     </div>
+
   );
 }
 

@@ -3,7 +3,10 @@ import './index.css';
 
 function App() {
   return (
-    <MathsMagician />
+    <div>
+      <MathsMagician />
+    </div>
+
   );
 }
 
