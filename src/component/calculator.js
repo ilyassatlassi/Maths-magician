@@ -16,8 +16,8 @@ function MathsMagician()  {
   };
   return (
     <div className="App">
-      
-        <Quote/>
+
+      <Quote />
       <div className="cacul-section">
         <div className="input-numbers">
           <input type="text" readOnly value={`${initObj.next ? initObj.total + initObj.operation + initObj.next : initObj.total || 0}`} />
@@ -59,7 +59,7 @@ function MathsMagician()  {
         </div>
       </div>
     </div>
-    
+
   );
 }
 

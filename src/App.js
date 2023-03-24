@@ -1,5 +1,4 @@
 import MathsMagician from './component/calculator';
-import Quote from './component/Quote';
 import './index.css';
 
 function App() {
@@ -7,8 +6,7 @@ function App() {
     <div>
       <MathsMagician />
     </div>
-    
-    
+
   );
 }
 
