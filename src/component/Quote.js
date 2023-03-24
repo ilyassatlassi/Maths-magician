@@ -16,18 +16,8 @@ function Quote() {
           const json = await res.json();
           setQuote(json[0]);
       } catch (error){
-        console.log(error)
-        // const err = `Error: ${error}`;
-        // console.log(err)
         setQuote({ quote: `${error}` });
-        console.log(setQuote)
       }
-    //   console.log(json[0]);
-    //   if (json.error) {
-    //     setQuote({ quote: " Error Occurred" });
-    //   } else {
-        
-    //   }
     };
     fetchData();
   }, []);
