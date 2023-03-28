@@ -2,8 +2,6 @@
 import React, {useState} from 'react';
 import calculate from '../../logic/calculate';
 
-import Quote from './Quote';
-
 function MathsMagician() {
   const [initObj, setObj] = useState({
     total: null,
