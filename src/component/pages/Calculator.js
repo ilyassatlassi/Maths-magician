@@ -1,8 +1,6 @@
 // eslint-disable-next-line
 import React, {useState} from 'react';
-import calculate from '../logic/calculate';
-
-import Quote from './Quote';
+import calculate from '../../logic/calculate';
 
 function MathsMagician() {
   const [initObj, setObj] = useState({
@@ -17,7 +15,6 @@ function MathsMagician() {
   return (
     <div className="App">
 
-      <Quote />
       <div className="cacul-section">
         <div className="input-numbers">
           <input type="text" readOnly value={`${initObj.next || initObj.operation || initObj.total || 0}`} />

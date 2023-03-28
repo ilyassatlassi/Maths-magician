@@ -187,3 +187,33 @@ span {
 .Error {
   color: red;
 }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ebe7e7;
+}
+
+.header ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #737373;
+}
+
+.home_page {
+  text-align: center;
+  margin-top: 20px;
+}
