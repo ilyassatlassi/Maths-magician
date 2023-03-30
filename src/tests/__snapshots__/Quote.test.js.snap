@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Quotes Component 1`] = `
+<div
+  data-testid="Quote"
+>
+  <div
+    className="Quote"
+  >
+    <div
+      className="ring"
+    />
+    <span>
+      loading...
+    </span>
+  </div>
+</div>
+`;
