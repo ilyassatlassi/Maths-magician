@@ -50,7 +50,7 @@ function Quote() {
     );
   }
 
-  return <div>{content}</div>;
+  return <div data-testid="Quote">{content}</div>;
 }
 
 export default Quote;

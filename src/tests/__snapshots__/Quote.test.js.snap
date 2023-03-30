@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quote component renders when there is quote 1`] = `
-<div>
+exports[`Should render Quotes Component 1`] = `
+<div
+  data-testid="Quote"
+>
   <div
     className="Quote"
   >

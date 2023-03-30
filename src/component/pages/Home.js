@@ -1,9 +1,7 @@
 import React from 'react';
 // eslint-disable-next-line
 const Home = () => (
-  <div>
-    <div />
-    <div className="home_page">
+    <div className="home_page" data-testid="home_page">
       <h2>Welcome to our page!</h2>
       <p>
         A calculator is an electronic device designed to perform mathematical
@@ -20,6 +18,5 @@ const Home = () => (
         basis.
       </p>
     </div>
-  </div>
 );
 export default Home;
