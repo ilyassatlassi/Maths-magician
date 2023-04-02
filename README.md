@@ -88,7 +88,7 @@ HTML, CSS, NodeJS v18, ReactJS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://funny-starburst-ee8d57.netlify.app/)
+- [Live Demo](https://math-magician-ilyass.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
